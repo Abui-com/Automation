@@ -40,7 +40,6 @@ public class EndUserSteps extends ScenarioSteps {
 		productPage = getPages().currentPageAt(ProductPage.class);
 		assertThat(productPage.getPageUrl().compareToIgnoreCase("https:/www.activeteachonline.com/product/"));
 		productPage.logOut();
-		//Thucydides.getCurrentSession().clear();
 	}
 
 	@Step

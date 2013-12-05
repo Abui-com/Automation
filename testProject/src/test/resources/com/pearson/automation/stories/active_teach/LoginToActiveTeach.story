@@ -10,7 +10,9 @@ Meta:
 @date 09/11/2013
 
 Scenario:Logging into Active Teach site successfully
-Given the user is on the Active Teach home page and the user enters the email <email> and the password <password> in the email and password fields 
+Given the user is on the Active Teach home page
+When the user enters the email <email> in the email field
+When the user enters the password <password> in the password field
 When the user clicks on the login button
 Then the user should be taken to the product page
 
